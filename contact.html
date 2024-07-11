@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" type="text/css" media="screen">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="container nav">
+        <button><a class="anchorNav" href="/index.html">C.V.</a></button>
+        <button><a class="anchorNav" href="/hobby.html">Loisirs</a></button>
+    </nav>
+    <h1>Me contacter</h1>
+    <p>Pour me contacter vous pouvez m'envoyer un mail <a href="mailto:alex.chamoux@le-campus-numerique.fr">ici</a> ou remplir ce formulaire de contact</p>
+
+    <h2>Formulaire de contact</h2>
+
+    <form class="form" action="https://httpbin.org/post" method="POST">
+        <p>
+            <label for="genre1">M.</label>
+            <input type="radio" name="genre" value="1" id="genre1">
+            <label for="genre2">Mme</label>
+            <input type="radio" name="genre" value="2" id="genre2">
+            <label for="genre3">Autres</label>
+            <input type="radio" name="genre" value="3" id="genre3">
+        </p>
+        <p>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom">
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom">
+        </p>
+        <p>
+            <label for="mail">* Votre adresse mail :</label>
+            <input type="text" name="mail" id="mail" required>
+        </p>
+        <select name="category">
+            <option value="rien">Choisissez votre catégorie de question</option>
+            <option value="M'embaucher">M'embaucher</option>
+            <option value="Me connaitre">Me connaître</option>
+            <option value="Me demander un RDV">Me demander un RDV</option>
+        </select>
+        <p><label for="messg">Votre message :</label></p>
+        <textarea name="messg" cols="30" rows="10" id="messg"></textarea>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Vos Disponibilités</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="Lundi" id="Lundi"></td>
+                    <td><input type="checkbox" name="Mardi" id="Mardi"></td>
+                    <td><input type="checkbox" name="Mercredi" id="Mercredi"></td>
+                    <td><input type="checkbox" name="Jeudi" id="Jeudi"></td>
+                    <td><input type="checkbox" name="Vendredi" id="Vendredi"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+        <p>* Ce champ est requis</p>
+    </form>
+
+</body>
+</html>

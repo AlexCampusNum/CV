@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* @media screen and (max-width: 425px) {
+    .photo{
+        width: vw;
+        border-radius: 50%;
+    }
+} */
+
+.photo{
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.title{
+    text-shadow: #FFF 2px 2px ;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+nav{
+    border: solid;
+    width: 85vw; 
+    height: 7vh;
+    padding-top:1.5;
+    position:fixed;
+    top:0;
+    background-color: #fff;
+    padding-top: 1.5vh;
+}
+
+.anchorNav{
+    margin-left: 25vw;
+    font-size: x-large;
+    color: blue;
+    text-decoration: none;
+}
+
+header{
+    background-color: cadetblue;
+    height: 25vh;
+    padding: 4vh;
+    margin-top: 6vh;
+}
+
+section{
+    padding-left: 4vh;
+}
+
+.upLeft{
+    grid-column: 1/2;
+    grid-row: 1;
+
+}
+
+.upRight{
+    grid-column: 6/12;
+    grid-row:  1;
+}
+
+.middleRight{
+    grid-column: 6/12;
+    grid-row: 2;
+}
+
+.downRight{
+    grid-column: 6/12;
+    grid-row: 3;
+}
+
+.middleLeft{
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.downLeft{
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.without{
+    list-style-type: none;
+}
+
+.without li{
+    margin-top: 2vh;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.red{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: grey 2px 5px ;
+}
+
+.green{
+    color: green;
+    font-family: fantasy;
+    text-shadow: grey 2px 5px ;
+}
+
+.blue{
+    color:blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: grey 2px 5px ;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 20vw;
+}
+
+.cyan{
+    background-color: cyan;
+}
+
+.form{
+    margin: 1vw;
+    padding: 2vw;
+    border: solid;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.frame{
+    width: 28vw;
+    height: 15.75vw;
+}
